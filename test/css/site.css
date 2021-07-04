@@ -1,0 +1,30 @@
+.fas
+{
+    margin-right:4px !important; /*override*/
+}
+
+.pagination .fas
+{
+    margin-right:0px !important; /*override*/
+}
+
+.pagination a
+{
+    color:#fff;
+}
+
+.card ul
+{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+
+.news-item
+{
+
+    text-align:center;
+    font-size:24px;
+    
+	
+}

@@ -1,0 +1,859 @@
+/* == Font Size == */
+.wojo.micro.text {
+  font-size: 0.625rem;
+  font-weight: 700;
+}
+.wojo.tiny.text {
+  font-size: 0.813rem;
+}
+.wojo.mini.text {
+  font-size: 0.875rem;
+}
+.wojo.small.text {
+  font-size: 0.938rem;
+}
+.wojo.normal.text {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: none;
+}
+.wojo.medium.text {
+  font-size: 1.25rem;
+}
+.wojo.large.text {
+  font-size: 1.5rem;
+}
+.wojo.big.text {
+  font-size: 2rem;
+}
+.wojo.huge.text {
+  font-size: 4rem;
+}
+.wojo.massive.text {
+  font-size: 6rem;
+}
+.wojo.gigant.text {
+  font-size: 8rem;
+}
+.wojo.caps {
+  text-transform: uppercase;
+}
+.wojo.dimmed.text {
+  opacity: .5;
+}
+.wojo.very.dimmed.text {
+  opacity: .85;
+}
+.wojo.icon.text {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.wojo.icon.text > .icon {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  max-width: 100%;
+  margin-right: .5em;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+.wojo.icon.text.middle {
+  display: flex;
+  display: flexbox;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.wojo.icon.right.text > .icon {
+  margin-left: .5em;
+  margin-right: auto;
+}
+.wojo.thin.text {
+  font-weight: 300;
+}
+.wojo.light.text {
+  font-weight: 400;
+}
+.wojo.semi.text {
+  font-weight: 500;
+}
+.wojo.demi.text {
+  font-weight: 700;
+}
+.wojo.bold.text {
+  font-weight: 900;
+}
+.wojo.italic.text {
+  font-style: italic;
+}
+.wojo.primary.text {
+  color: #E91E63;
+}
+.wojo.secondary.text {
+  color: #673AB7;
+}
+.wojo.positive.text {
+  color: #4CAF50;
+}
+.wojo.negative.text {
+  color: #EF5350;
+}
+.wojo.white.text {
+  color: #fff;
+}
+.wojo.black.text {
+  color: #212121;
+}
+.wojo.primary.bg {
+  background-color: #E91E63;
+}
+.wojo.secondary.bg {
+  background-color: #673AB7;
+}
+.wojo.positive.bg {
+  background-color: #4CAF50;
+}
+.wojo.info.bg {
+  background-color: #26C6DA;
+}
+.wojo.negative.bg {
+  background-color: #F44336;
+}
+.wojo.grey.bg {
+  background-color: #9E9E9E;
+}
+.wojo.primary.bg.dimmed {
+  background-color: #F8BBD0;
+}
+.wojo.secondary.bg.dimmed {
+  background-color: #D1C4E9;
+}
+.wojo.positive.bg.dimmed {
+  background-color: #C8E6C9;
+}
+.wojo.negative.bg.dimmed {
+  background-color: #FFCDD2;
+}
+.wojo.info.bg.dimmed {
+  background-color: #B2EBF2;
+}
+.wojo.white.bg.dimmed {
+  background-color: rgba(255,255,255,0.3);
+}
+.wojo.grey.bg.dimmed {
+  background-color: #F5F5F5;
+}
+.highlite {
+  background-color: #fffde7!important;
+}
+.wojo.boxed {
+  border: 1px solid #DDDDDD;
+}
+.wojo.shadow {
+  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.wojo.soft.shadow {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wojo.readonly {
+  position: relative;
+  cursor: not-allowed;
+  point-events: none;
+  text-shadow: none !important;
+  color: transparent !important;
+  -webkit-transition: all 0s linear;
+  transition: all 0s linear;
+}
+.wojo.readonly:before {
+  position: absolute;
+  content: '';
+  top: 0%;
+  left: 0%;
+  background: rgba(255, 255, 255, 0.75);
+  width: 100%;
+  height: 100%;
+  border-radius: 0.250em;
+  z-index: 10;
+}
+/* == Scroller == */
+.scrollbox_right,
+.scrollbox_left {
+  overflow: auto;
+}
+.scrollbox_right {
+  padding: .5em 1em 0 .5em
+}
+.scrollbox_left {
+  padding: .5em 0 0 1em
+}
+/* == Tabs == */	
+ul.wojo.tabs {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0
+}
+ul.wojo.tabs,
+ul.wojo.tabs li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  position: relative;
+}
+ul.wojo.fluid.tabs {
+  position: relative;
+  top: -1em;
+  left: 1em;
+  margin-right: 2em;
+  border-radius: 0.188em;
+  margin-bottom: 0;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6);
+  background: rgba(0, 0, 0, 0) linear-gradient(60deg, #ab47bc, #7b1fa2) repeat scroll 0 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding: 1em;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+ul.wojo.basic.tabs {
+  margin: 0;
+  width: auto;
+  background-color: transparent;
+}
+ul.wojo.basic.tabs li a span {
+  margin-right: .5em;
+}
+ul.wojo.basic.tabs li.active a {
+  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+ul.wojo.tabs li {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  margin-right: 2px;
+}
+ul.wojo.tabs li a {
+  padding: .875em 2em;
+  font-weight: 500;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  background-color: #FFFFFF;
+}
+ul.wojo.tabs li.active a {
+  color: #fff;
+  background-color: #673AB7
+}
+ul.wojo.tabs li a:hover {
+  color: #50646F;
+}
+ul.wojo.tabs li a .icon {
+  padding-right: 1em;
+  line-height: 1;
+}
+ul.wojo.fluid.tabs li,
+ul.wojo.fluid.tabs span,
+ul.wojo.fluid.tabs .icon {
+  min-width: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  max-width: 100%;
+  white-space: nowrap;
+  margin: 0;
+}
+ul.wojo.fluid.tabs li a {
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 0.875em;
+  padding: 1em 1.25em;
+  border-radius: 0.188em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+ul.wojo.fluid.tabs li.active a {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+ul.wojo.wide.tabs li a {
+  padding: .875em 4em;
+}
+/* == Responsive Tabs == */
+.wojo.tab.wrap {
+  position: relative;
+  display: flex;
+  align-items: left;
+  margin-bottom: 1em;
+  background-color: #00bcd4;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(0, 188, 212, 0.46);
+  padding: .750em;
+  border-radius: 0.188em;
+}
+.wojo.tab.wrap button {
+  align-self: stretch;
+  transition: all .4s ease-out;
+  padding: 0 1rem 0 1.5rem;
+  outline: 0;
+  border: 0;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.188em;
+  cursor: pointer;
+  color: #fff;
+}
+.wojo.tab.wrap button.hidden {
+  transition: none;
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.wojo.tab.wrap button::after {
+  content: attr(count);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #3c4858;
+  width: 1em;
+  height: 1em;
+  font-size: 1em;
+  line-height: 1;
+  margin-left: 1rem;
+  border-radius: 0.188em;
+}
+.wojo.tab.wrap > ul.tabs {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+  overflow: hidden;
+}
+.wojo.tab.wrap ul.tabs li {
+  flex: none;
+  margin: 0;
+}
+.wojo.tab.wrap ul.tabs li a {
+  font-weight: 300;
+  font-size: 0.875em;
+  background-color: transparent;
+  color: #FFFFFF;
+  padding: 1em 1.25em;
+  text-transform: uppercase;
+  border-radius: 0.188em;
+  display: block;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
+}
+.wojo.tab.wrap ul.tabs li a.active,
+.wojo.tab.wrap ul.tabs li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.wojo.tab.wrap ul.hidden-links {
+  position: absolute;
+  background-color: #FFFFFF;
+  box-shadow: 0 10px 30px 0 rgba(0,0,0, 0.1);
+  border: 1px solid #E7E7E7;
+  right: 0;
+  top: 100%;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  border-radius: 0;
+  z-index: 300
+}
+.wojo.tab.wrap ul.hidden-links.hidden {
+  display: none;
+}
+.wojo.tab.wrap ul.hidden-links li {
+  margin: 0px;
+  padding: 0;
+  list-style-type: none;
+  box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.08);
+}
+.wojo.tab.wrap ul.hidden-links li:last-child {
+  box-shadow: none;
+}
+.wojo.tab.wrap ul.hidden-links li a {
+  font-size: 0.875rem;
+  line-height: 1em;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  display: block
+}
+/* == Uploader == */
+.wojo.uploader {
+}
+.wojo.basic.uploader {
+  border: 0;
+  width: 100%;
+  color: #92AAB0;
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 1em;
+  text-align: left;
+}
+.wojo.uploader-active {
+  border-color: #0B85A1;
+}
+.wojo.uploader div.or {
+  font-size: 14px;
+  font-weight: bold;
+  color: #C0C0C0;
+  padding: 10px;
+}
+.wojo.uploader div.content label {
+  background-color: #5a7bc2;
+  color: white;
+  padding: 6px 0px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 300px;
+  margin: 20px auto 0px auto;
+  box-shadow: 2px 2px 2px #888888;
+}
+.wojo.basic.uploader div.content label {
+  background-color: transparent;
+  color: #5e5e5e;
+  padding: 0;
+  font-size: 1em;
+  font-weight: normal;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: auto;
+  margin: 0;
+  box-shadow: none;
+}
+.wojo.uploader div.content span {
+  cursor: pointer;
+}
+.wojo.uploader div.content input,
+.wojo.button.uploader input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  border: 0;
+  opacity: .0;
+  direction: ltr;
+  cursor: pointer;
+  width: auto;
+}
+.wojo.uploader div.content label:hover {
+  background-color: #427fed;
+}
+.wojo.basic.uploader div.content label:hover {
+  background-color: transparent;
+}
+.wojo.button.uploader {
+  width: auto;
+  position: relative;
+}
+/* == Activity == */
+ul.wojo.activity,
+ul.wojo.activity li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.wojo.activity li {
+  clear: both;
+}
+ul.wojo.activity li .intro {
+  float: left;
+  width: 150px;
+  text-align: right;
+  position: relative;
+  font-size: .875em;
+  font-family: 'RobotoBold';
+  padding: 1em;
+}
+ul.wojo.activity li .intro:after,
+ul.wojo.activity li .intro:before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #2B3D4C;
+  right: -4px;
+  border-radius: 6px;
+  top: 1.5em;
+  z-index: 3
+}
+ul.wojo.activity li .intro:before {
+  width: 9px;
+  height: 9px;
+  background-color: #fff;
+  border-radius: 9px;
+  right: -5px;
+  top: 1.35em;
+  z-index: 2
+}
+ul.wojo.activity li:nth-child(2n) .content {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+ul.wojo.activity li .content {
+  margin-left: 150px;
+  padding: 1em;
+  position: relative;
+}
+ul.wojo.activity li .content:before {
+  position: absolute;
+  height: 100%;
+  content: "";
+  border-left: 2px solid #00BCD4;
+  left: 0;
+  top: 0;
+  z-index: 1
+}
+
+@media screen and (max-width:769px) {
+ul.wojo.activity li .intro {
+  float: none;
+  width: auto;
+  text-align: left;
+  padding: .5em 1em;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+ul.wojo.activity li:nth-child(2n) .content {
+  background-color: rgba(0, 0, 0, 0);
+}
+ul.wojo.activity li .content {
+  margin-left: 0;
+  padding: .5em 1em;
+  position: relative;
+}
+ul.wojo.activity li .intro:after,
+ul.wojo.activity li .intro:before,
+ul.wojo.activity li .content:before {
+  display: none
+}
+}
+/* == Breadcrumb == */
+.wojo.breadcrumb {
+  vertical-align: middle;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+.wojo.breadcrumb .divider {
+  display: inline-block;
+  opacity: 0.7;
+  margin: 0em 0.75rem 0em;
+  font-size: 0.913em;
+  color: rgba(0, 0, 0, 0.4);
+  vertical-align: baseline;
+}
+.wojo.breadcrumb a {
+  color: #999;
+}
+.wojo.breadcrumb a:hover {
+  color: #E91E63;
+}
+.wojo.breadcrumb .icon.divider {
+  font-size: 0.938em;
+  vertical-align: baseline;
+}
+.wojo.breadcrumb a.section {
+  cursor: pointer;
+}
+.wojo.breadcrumb .section {
+  display: inline-block;
+  margin: 0em;
+  padding: 0em;
+}
+.wojo.breadcrumb .active.section {
+  font-weight: 500;
+  color: #111;
+}
+/* == Variations == */
+.wojo.mini.breadcrumb {
+  font-size: 0.750rem;
+}
+.wojo.tiny.breadcrumb {
+  font-size: 0.875rem;
+}
+.wojo.small.breadcrumb {
+  font-size: 0.938rem;
+}
+.wojo.breadcrumb {
+  font-size: 1rem;
+}
+.wojo.large.breadcrumb {
+  font-size: 1.125rem;
+}
+.wojo.big.breadcrumb {
+  font-size: 1.250rem;
+}
+.wojo.huge.breadcrumb {
+  font-size: 1.5rem;
+}
+.wojo.massive.breadcrumb {
+  font-size: 2rem;
+}
+/* == Pagination == */
+.wojo.pagination {
+  margin: 0em;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  box-shadow: none;
+  min-height: 1em;
+  border: none;
+  background: none;
+}
+.wojo.pagination .item:last-child {
+}
+.wojo.compact .item:last-child {
+}
+.wojo.pagination .item:last-child:before {
+  display: none;
+}
+.wojo.pagination .item {
+  padding: 0.5em 1.25em;
+  line-height: 1;
+  text-align: center;
+  color: #999999
+}
+.wojo.pagination .item:hover {
+  color: rgba(0, 0, 0, .5);
+  background: none;
+}
+.wojo.pagination .icon.item i.icon {
+  vertical-align: top;
+}
+.wojo.pagination .active.item {
+  border-top: none;
+  background: none;
+  box-shadow: 0 2px 0 0 #673AB7;
+  color: rgba(0, 0, 0, 1);
+}
+
+@media screen and (max-width:48.063em) {
+    /*
+ul.wojo.basic.tabs {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+ul.wojo.basic.tabs li {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}*/
+}
+/* == Accordion == */
+.wojo.accordion {
+  background: #fff;
+}
+.wojo.accordion .header {
+  font-family: "Roboto";
+  font-size: 1.25em;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 1em;
+  border-bottom: 1px solid #f1f5f9;
+}
+.wojo.accordion .header span,
+.wojo.accordion .header .icon {
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0px;
+  min-width: 0;
+}
+.wojo.accordion .header span {
+  color: #a3b0c2;
+  font-weight: 300;
+}
+.wojo.accordion.acive .header span {
+  color: #2b87da;
+}
+.wojo.accordion .header .icon {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  max-width: 100%;
+  white-space: nowrap;
+}
+.wojo.accordion .content {
+  padding: 1em;
+  font-size: .875em;
+}
+.wojo.accordion.active > .header .icon {
+  transform: rotate(180deg);
+}
+/* Content Editor */
+[is_editable="true"] [contenteditable="true"] {
+  background-color: transparent;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.5);
+}
+/* == Sticky == */
+.wojo.sticky {
+  position: static;
+  -webkit-transition: none;
+  transition: none;
+  z-index: 800;
+}
+.wojo.sticky.bound {
+  position: absolute;
+  left: auto;
+  right: auto;
+}
+.wojo.sticky.fixed {
+  position: fixed;
+  left: auto;
+  right: auto;
+}
+.wojo.sticky.bound.top,
+.wojo.sticky.fixed.top {
+  top: 0px;
+  bottom: auto;
+}
+.wojo.sticky.bound.bottom,
+.wojo.sticky.fixed.bottom {
+  top: auto;
+  bottom: 0px;
+}
+.wojo.native.sticky {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+}
+/* == Scrollbar == */
+.optiscroll {
+  position: relative;
+  overflow: auto;
+  height: 100%;
+  -webkit-overflow-scrolling: touch
+}
+.optiscroll.is-enabled {
+  overflow: hidden
+}
+.optiscroll.is-enabled>.optiscroll-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch
+}
+.optiscroll-v,
+.optiscroll-h {
+  position: absolute;
+  visibility: hidden;
+  z-index: 2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+.optiscroll-v {
+  right: 0
+}
+.optiscroll-h {
+  bottom: 0
+}
+.optiscroll.has-vtrack>.optiscroll-v,
+.optiscroll.has-htrack>.optiscroll-h {
+  visibility: visible
+}
+.optiscroll.is-rtl>.optiscroll-v {
+  left: 0;
+  right: auto
+}
+.optiscroll-vtrack,
+.optiscroll-htrack {
+  display: block;
+  position: absolute;
+  opacity: 1;
+  -ms-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  transition: height 0.2s ease 0s, width 0.2s ease 0s, opacity 0.2s ease 0s;
+  box-sizing: border-box
+}
+.optiscroll-v {
+  top: 4px;
+  bottom: 4px;
+  width: 0
+}
+.optiscroll-h {
+  left: 4px;
+  right: 4px;
+  height: 0
+}
+.optiscroll.has-vtrack.has-htrack>.optiscroll-v {
+  bottom: 8px
+}
+.optiscroll.has-vtrack.has-htrack>.optiscroll-h {
+  right: 8px
+}
+.optiscroll-vtrack,
+.optiscroll-htrack {
+  background: rgba(0,0,0,0.3);
+  border-radius: 2px;
+  box-shadow: 0 0 1px #FFF;
+  opacity: 0
+}
+.optiscroll-vtrack {
+  width: 3px;
+  right: 4px
+}
+.optiscroll-htrack {
+  height: 3px;
+  bottom: 4px
+}
+.optiscroll:hover>.optiscroll-v .optiscroll-vtrack,
+.optiscroll:hover>.optiscroll-h .optiscroll-htrack {
+  opacity: 1
+}
+.optiscroll.has-vtrack.has-htrack.is-rtl>.optiscroll-h {
+  right: 4px;
+  left: 8px
+}
+.optiscroll.is-rtl>.optiscroll-v .optiscroll-vtrack {
+  right: auto;
+  left: 4px
+}

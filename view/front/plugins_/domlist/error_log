@@ -1,0 +1,6 @@
+[22-Jun-2021 09:28:47 UTC] PHP Fatal error:  Call to a member function query() on null in /home/trckcxyz/public_html/domainsink.com/view/front/plugins_/domlist/test2.php on line 38
+[24-Jun-2021 07:31:02 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/trckcxyz/public_html/domainsink.com/view/front/plugins_/domlist/details.php on line 1347
+[24-Jun-2021 07:31:52 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/trckcxyz/public_html/domainsink.com/view/front/plugins_/domlist/details.php on line 1347
+[24-Jun-2021 07:33:12 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/trckcxyz/public_html/domainsink.com/view/front/plugins_/domlist/details.php on line 1347
+[24-Jun-2021 07:33:28 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/trckcxyz/public_html/domainsink.com/view/front/plugins_/domlist/details.php on line 1347
+[24-Jun-2021 07:48:06 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/trckcxyz/public_html/domainsink.com/view/front/plugins_/domlist/details.php on line 1347

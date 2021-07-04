@@ -1,0 +1,8 @@
+ErrorDocument 404 https://www.domainsink.com/stats/404.php
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR] 
+RewriteCond %{HTTP_HOST} !^www\.domainsink\.com$ [NC] 
+RewriteRule ^(.*)$ https://www.domainsink.com/$1 [L,R=301]
+RewriteCond %{THE_REQUEST} ^.*/index\.php 
+RewriteRule ^(.*)index.php$ /$1 [R=301,L]
+RewriteRule ^([a-zA-Z0-9-]+)(/)?$ index.php?name=$1 [L]

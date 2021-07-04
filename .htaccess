@@ -1,0 +1,41 @@
+Options -MultiViews
+RewriteEngine On
+
+RewriteCond %{HTTPS} off [OR] 
+RewriteCond %{HTTP_HOST} !^www\.domainsink\.com$ [NC] 
+RewriteRule ^(.*)$ https://www.domainsink.com/$1 [L,R=301]
+
+  RewriteCond %{THE_REQUEST} ^.*/index\.php 
+  RewriteRule ^(.*)index.php$ /$1 [R=301,L]
+  RewriteRule ^dynadot/([a-zA-Z0-9-.]+)(/)?$ https://www.anrdoezrs.net/om75lnwtnvACBBECBDHIACDGJKFJH?sid=$1 [R,L]
+  RewriteRule ^register/dynadot(/)?$ https://www.anrdoezrs.net/om75lnwtnvACBBECBDHIACDGJKFJH?sid=register [R,L]
+  RewriteRule ^namesilo(/)?$ https://www.namesilo.com/register.php?rid=be23853kl [R,L]
+  RewriteRule ^blockchain/register(/)?$ https://unstoppabledomains.com/r/396bae47d89d4cb [R,L]
+
+Options -Indexes
+
+RewriteBase /
+
+#Remove extra trailing slashes
+RewriteCond %{REQUEST_URI} ^(.*)/{2,}(.*)$
+RewriteRule . %1/%2 [R=301,L]
+
+#Add missing trailing slash
+RewriteCond %{REQUEST_URI} /+[^\.]+$
+RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
+
+<ifModule mod_deflate.c>
+	<filesmatch "\.(js|css|html|jpg|png|gif|eot|woff|ttf|svg)$">
+		SetOutputFilter DEFLATE
+	</filesmatch>
+</ifModule>
+
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|inc|bak|cache|tpl)$">
+	Order Allow,Deny
+	Deny from all
+</FilesMatch>
+RewriteRule ^stats/([a-zA-Z0-9-.]+)(/)?$ test.php?name=$1 [L]

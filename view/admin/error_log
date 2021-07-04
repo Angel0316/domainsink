@@ -1,0 +1,54 @@
+[12-Oct-2019 15:53:49 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+			AND active = ? 
+		  ORDER BY modalias' at line 10 in /home/trckcxyz/public_html/domainsink.com/lib/db.class.php:246
+Stack trace:
+#0 /home/trckcxyz/public_html/domainsink.com/lib/db.class.php(246): PDO->prepare('SELECT \r\n\t\t\tid,...')
+#1 /home/trckcxyz/public_html/domainsink.com/lib/modules.class.php(159): Db->pdoQuery('SELECT \r\n\t\t\tid,...', Array)
+#2 /home/trckcxyz/public_html/domainsink.com/view/admin/helper.php(428): Modules->getAvailModules(false)
+#3 {main}
+  thrown in /home/trckcxyz/public_html/domainsink.com/lib/db.class.php on line 246
+[12-Oct-2019 15:53:55 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+			AND active = ? 
+		  ORDER BY modalias' at line 10 in /home/trckcxyz/public_html/domainsink.com/lib/db.class.php:246
+Stack trace:
+#0 /home/trckcxyz/public_html/domainsink.com/lib/db.class.php(246): PDO->prepare('SELECT \r\n\t\t\tid,...')
+#1 /home/trckcxyz/public_html/domainsink.com/lib/modules.class.php(159): Db->pdoQuery('SELECT \r\n\t\t\tid,...', Array)
+#2 /home/trckcxyz/public_html/domainsink.com/view/admin/helper.php(428): Modules->getAvailModules(false)
+#3 {main}
+  thrown in /home/trckcxyz/public_html/domainsink.com/lib/db.class.php on line 246
+[12-Oct-2019 15:59:04 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+			AND active = ? 
+		  ORDER BY modalias' at line 10 in /home/trckcxyz/public_html/domainsink.com/lib/db.class.php:246
+Stack trace:
+#0 /home/trckcxyz/public_html/domainsink.com/lib/db.class.php(246): PDO->prepare('SELECT \r\n\t\t\tid,...')
+#1 /home/trckcxyz/public_html/domainsink.com/lib/modules.class.php(159): Db->pdoQuery('SELECT \r\n\t\t\tid,...', Array)
+#2 /home/trckcxyz/public_html/domainsink.com/view/admin/helper.php(428): Modules->getAvailModules(false)
+#3 {main}
+  thrown in /home/trckcxyz/public_html/domainsink.com/lib/db.class.php on line 246
+[14-Jun-2021 14:08:33 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+			AND active = ? 
+		  ORDER BY modalias' at line 10' in /home/trckcxyz/public_html/domainsink.com/lib/db.class.php:246
+Stack trace:
+#0 /home/trckcxyz/public_html/domainsink.com/lib/db.class.php(246): PDO->prepare('SELECT \r\n\t\t\tid,...')
+#1 /home/trckcxyz/public_html/domainsink.com/lib/modules.class.php(159): Db->pdoQuery('\r\n\t\t  SELECT \r\n...', Array)
+#2 /home/trckcxyz/public_html/domainsink.com/view/admin/helper.php(428): Modules->getAvailModules(false)
+#3 {main}
+  thrown in /home/trckcxyz/public_html/domainsink.com/lib/db.class.php on line 246
+[14-Jun-2021 14:10:18 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+			AND active = ? 
+		  ORDER BY modalias' at line 10' in /home/trckcxyz/public_html/domainsink.com/lib/db.class.php:246
+Stack trace:
+#0 /home/trckcxyz/public_html/domainsink.com/lib/db.class.php(246): PDO->prepare('SELECT \r\n\t\t\tid,...')
+#1 /home/trckcxyz/public_html/domainsink.com/lib/modules.class.php(159): Db->pdoQuery('\r\n\t\t  SELECT \r\n...', Array)
+#2 /home/trckcxyz/public_html/domainsink.com/view/admin/helper.php(428): Modules->getAvailModules(false)
+#3 {main}
+  thrown in /home/trckcxyz/public_html/domainsink.com/lib/db.class.php on line 246
+[23-Jun-2021 23:19:34 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+			AND active = ? 
+		  ORDER BY modalias' at line 10' in /home/trckcxyz/public_html/domainsink.com/lib/db.class.php:246
+Stack trace:
+#0 /home/trckcxyz/public_html/domainsink.com/lib/db.class.php(246): PDO->prepare('SELECT \r\n\t\t\tid,...')
+#1 /home/trckcxyz/public_html/domainsink.com/lib/modules.class.php(159): Db->pdoQuery('\r\n\t\t  SELECT \r\n...', Array)
+#2 /home/trckcxyz/public_html/domainsink.com/view/admin/helper.php(428): Modules->getAvailModules(false)
+#3 {main}
+  thrown in /home/trckcxyz/public_html/domainsink.com/lib/db.class.php on line 246

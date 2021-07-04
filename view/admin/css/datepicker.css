@@ -1,0 +1,360 @@
+/* == Date Picker  == */
+.wojo.calendar .wojo.popup,
+.wojo.mini.calendar .wojo.popup {
+  max-width: none;
+  padding: 0;
+  border: none;
+  user-select: none;
+  font-size: .938rem;
+}
+.wojo.calendar .wojo.popup::before {
+  background: #F9FAFB;
+}
+.wojo.calendar .wojo.popup.top::before {
+  background: #fff;
+}
+.wojo.calendar .calendar:focus {
+  outline: 0;
+}
+.wojo.calendar .wojo.table,
+.wojo.calendar .wojo.table tr,
+.wojo.calendar .wojo.table tr td,
+.wojo.calendar .wojo.table thead th {
+  border: 0;
+}
+.wojo.calendar .wojo.table.year,
+.wojo.calendar .wojo.table.month,
+.wojo.calendar .wojo.table.minute {
+  min-width: 15em;
+}
+.wojo.calendar .wojo.table.day {
+  min-width: 18em;
+}
+.wojo.calendar .wojo.table.hour {
+  min-width: 20em;
+}
+.wojo.calendar .wojo.table tr th,
+.wojo.calendar .wojo.table tr td {
+  padding: 0.5em;
+  white-space: nowrap;
+  border-left: 0;
+}
+.wojo.calendar .wojo.table tr th {
+  border-left: 0;
+  background: #fff
+}
+.wojo.calendar .wojo.table tr th .icon {
+  margin: 0;
+}
+.wojo.calendar .wojo.table tr th .icon {
+  margin: 0;
+}
+.wojo.calendar .wojo.table tr:first-child th {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+.wojo.calendar .wojo.table.day tr:first-child th {
+  border: none;
+}
+.wojo.calendar .wojo.table.day tr:nth-child(2) th {
+  padding-top: 0.2em;
+  padding-bottom: 0.3em;
+}
+.wojo.calendar .wojo.table tr td {
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  border-radius:.188em;
+}
+.wojo.calendar .wojo.table tr .link {
+  cursor: pointer;
+}
+.wojo.calendar .wojo.table tr .prev.link {
+  width: calc(100% /7);
+  position: absolute;
+  left: 0;
+}
+.wojo.calendar .wojo.table tr .next.link {
+  width: calc(100% /7);
+  position: absolute;
+  right: 0;
+}
+.wojo.calendar .wojo.table tr .disabled {
+  pointer-events: none;
+  color: rgba(40, 40, 40, 0.3);
+}
+/* == States  == */
+.wojo.calendar .wojo.table tr td.today {
+  font-weight: 500;
+  background-color: #673AB7;
+  color: #fff;
+}
+.wojo.calendar .wojo.table tr td.range {
+  background: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.95);
+  box-shadow: none;
+}
+.wojo.calendar .wojo.table.inverted tr td.range {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  box-shadow: none;
+}
+.wojo.calendar .calendar:focus .wojo.table tbody tr td.focus,
+.wojo.calendar .calendar.active .wojo.table tbody tr td.focus {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius:.188em;
+}
+.wojo.calendar .wojo.table tbody tr td.active {
+  background: #E91E63;
+  color: #fff
+}
+.wojo.calendar .calendar:focus .wojo.table.inverted tbody tr td.focus,
+.wojo.calendar .calendar.active .wojo.table.inverted tbody tr td.focus {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius:.188em;
+}
+/* == Calendar  == */
+.wojo.calendar {
+  border-radius:0.375em;
+}
+.wojo.calendar .header {
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.1);
+}
+.wojo.calendar .header div {
+  -webkit-flex: 1 1 0px;
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0px;
+  min-width: 0;
+  position: relative;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  padding: .5em;
+  font-size: .938em;
+}
+/* Calendar days wrapper */
+.wojo.calendar .content {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  overflow: hidden;
+  border-radius:0.375em;
+}
+.wojo.calendar .weeks {
+  display: table-row;
+  width: 100%;
+}
+/* Calendar Days */
+.wojo.calendar .weeks .cell {
+  width: Calc(100% /7);
+  display: table-cell;
+  vertical-align: top;
+  box-sizing: border-box;
+  position: relative;
+  font-weight: 700;
+  color: inherit;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+  -webkit-transition: .25s;
+  transition: .25s;
+  padding: 0;
+  text-decoration: none;
+}
+.wojo.calendar .weeks .day:before {
+  content: " ";
+  display: block;
+  padding-top: 100%;
+  float: left;
+}
+.wojo.calendar .weeks .empty {
+  background-color: #FDFDFD;
+}
+.wojo.calendar .weeks .date {
+  position: absolute;
+  line-height: 2em;
+  top: 2px;
+  right: 5px;
+  font-size: .875em;
+  color: rgba(0,0,0,0.5);
+  width:2em;
+  height:2em;
+  text-align:center;
+  border-radius:2em;
+}
+/* Current day style */
+.wojo.calendar .weeks .day.today .date {
+  background: #673AB7;
+}
+.wojo.calendar .weeks .day.today .date {
+  color: #fff;
+}
+.wojo.calendar .progress {
+  position: relative;
+  text-align: center;
+  line-height: 0;
+  max-width: 20px;
+  margin: 0 auto;
+  padding-top:1.75em;
+}
+.wojo.calendar .indicator {
+  display: inline-block;
+  margin: 1px;
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+  border-radius: 6px;
+  background-color: #2B3D4C;
+  font-size: 0;
+  color: transparent;
+}
+.wojo.calendar .indicator:hover {
+  cursor: pointer;
+}
+/* Current events */
+.wojo.calendar .list {
+  background: rgba(255, 255, 255, 0.85);
+  overflow: auto;
+  position: absolute;
+  top: 38px;
+  width: 100%;
+  height: calc(100% - 40px);
+  display: none;
+}
+.wojo.calendar .list .event {
+  display: block;
+  color: #fff;
+  padding: .5em .938em;
+  border-radius: .188em;
+  margin-bottom: .5em;
+  position: relative
+}
+.wojo.calendar .list .event .description {
+  font-size: .938em;
+  margin:0.25em 0
+}
+.wojo.calendar .list .event > a {
+  font-size: .938em;
+  font-weight: 700;
+  color: rgba(255,255,255,0.75)
+}
+.wojo.calendar .list .event > a:hover {
+  color: rgba(255,255,255,1)
+}
+.wojo.calendar .list .event .time {
+  font-weight: 700;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+.wojo.calendar .list .event .time .start,
+.wojo.calendar .list .event .time .end {
+  font-size: .875em;
+  display: inline-block;
+}
+.wojo.calendar .list .event .time .end:not(:empty):before {
+  content: '-';
+  padding: 0 2px;
+}
+.wojo.calendar .list .date {
+  width: 4.5em;
+  position: absolute;
+  left: 0;
+  top: 0.938em;
+  text-align: center;
+  font-size: .938em;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+.wojo.calendar .list .date > span {
+  display: block;
+}
+.wojo.calendar .list .today .date {
+  color: #5E35B1;
+}
+.wojo.calendar .event-item {
+  position: relative;
+  padding: .938em 0.938em .5em 4.5em;
+  display: none;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  text-align: left;
+}
+.wojo.calendar .event-item:after {
+  content: '-/-';
+  padding: .5em .938em;
+  display: block;
+  margin-bottom: .5em;
+}
+.wojo.calendar .event-item .remove {
+  top: 1em;
+  position: absolute;
+  right: 1.5em;
+  color: #fff
+}
+.wojo.calendar .list .active {
+  display: block;
+}
+.wojo.calendar .list .active:after {
+  display: none!important;
+}
+
+@media (min-width: 400px) {
+.wojo.calendar .weeks .date {
+  top: 5px;
+  left: 5px;
+  font-size: .750em;
+}
+}
+
+@media (min-width: 600px) {
+.wojo.calendar .weeks .day {
+  padding-top: 1.5em;
+  position: relative;
+}
+.wojo.calendar .weeks .day:before {
+  padding-top: 77%;
+}
+.wojo.calendar .progress {
+  width: auto;
+  max-width: none;
+  padding-top:0.5em;
+}
+.wojo.calendar .list .event .time {
+  position: absolute;
+  left:auto;
+  right:0.5em
+}
+.wojo.calendar .indicator {
+  font-weight: 500;
+  text-align: left;
+  display: block;
+  margin: 0 0 1px 0;
+  width: auto;
+  font-size: 0.750em;
+  padding: 1em;
+  border-radius: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.wojo.calendar .indicator.start {
+  border-radius: 1em 0 0 1em;
+}
+.wojo.calendar .indicator.end {
+  border-radius: 0 1em 1em 0;
+}
+.wojo.calendar .indicator.full {
+  border-radius: 1em;
+}
+}

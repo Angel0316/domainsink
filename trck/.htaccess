@@ -1,0 +1,24 @@
+SetEnvIfNoCase User-agent "Baidu" spammer=yes
+SetEnvIfNoCase User-agent "Yandex" spammer=yes
+SetEnvIfNoCase User-agent "Sosospider" spammer=yes
+
+<Limit GET PUT POST>
+
+order deny,allow
+
+deny from env=spammer
+deny from 47.89.184.34
+
+</Limit>
+<IFModule mod_rewrite.c>
+  RewriteEngine on
+
+RewriteCond %{HTTPS} off [OR] 
+RewriteCond %{HTTP_HOST} !^www\.domainsink\.com$ [NC] 
+RewriteRule ^(.*)$ https://www.domainsink.com/$1 [L,R=301]
+  RewriteCond %{THE_REQUEST} ^.*/index\.php 
+  RewriteRule ^(.*)index.php$ /$1 [R=301,L]
+  RewriteRule ^partners(/)?$ http://adcombo.com/?ref_id=31e92c57f75f95172542e14fd839edbc [R,L]
+ 
+  RewriteRule ^i/Phone/7(/)?$ index.php?a=57&b=fb&c=0&d=311&f=0&cid=311&i=40841&w=147838&e=57&h=42 [L]
+</IFModule>
